@@ -1,0 +1,17 @@
+s1 = 'Petere'
+s2 = 'TOM'
+s3 = '123'
+s4 = '3.14'
+s5 = 'abcdABCDabcd'
+
+print(s1.isupper())
+print(s1.islower())
+print(s1.isdigit())
+print(s1.isalpha())
+print(s1.swapcase())
+print(s1.replace('eter', 'arker'))
+print(s1.find('e'))
+print(s1.rfind('e')) #reverse find
+print(s1.count('e'))
+print(s4.isdigit())
+print(s3.isdigit())
