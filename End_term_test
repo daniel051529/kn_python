@@ -1,0 +1,22 @@
+line = input("Enter a line of codes: ")
+digit = ''
+alpha = ''
+char = ''
+digit_count = 0
+
+for i in line:
+    if i.isdigit():
+        digit += i
+        digit_count += 1
+
+    elif i.isalpha():
+        alpha += i
+    else:
+        char += i
+print("分類後: ", end='')
+print(digit + ', ' , end='')
+print(alpha + ', ' , end='')
+print(char)
+
+print('digit count: ' + str(digit_count))
+print('swapping alphabet case: ' + alpha.swapcase())
