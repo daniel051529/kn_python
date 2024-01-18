@@ -7,6 +7,18 @@ help(h) #runs 2 print only
 print(help(h)) #runs 2 prints and print return value
 
 def help2(x):
+    print(50)
     return 3
-help2(h)
-print(help2(h)) #runs function and prints return value
+help2(h) #help2(h) is not assigned to new variable
+var = help2(h) #this runs the func once
+print(help2(h)) #this runs the func and prints returned val
+
+#return value is useful to use function as a production farm.
+#to adapt to different parameter input.
+def calculate(roof):
+    sum = 0
+    for i in range(1,roof+1):
+        sum += i
+    return sum
+roof = int(input("enter roof number: "))
+print("function call:", calculate(roof))
