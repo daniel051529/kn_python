@@ -1,0 +1,12 @@
+def help(x):
+    print("tasukede!")
+    print("input:", x) #, creates spacing
+    
+h = input("enter a number: ")
+help(h) #runs 2 print only
+print(help(h)) #runs 2 prints and print return value
+
+def help2(x):
+    return 3
+help2(h)
+print(help2(h)) #runs function and prints return value
